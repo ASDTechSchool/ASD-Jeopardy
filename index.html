@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ASD Jeopardy</title>
+    <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css"-->
+    <link rel="stylesheet" href="style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="gameLogic.js"></script>
+</head>
+
+<body>
+    <table id="game" cellspacing="5" cellpadding="0" class="hide">
+        <thead>
+            <tr>
+                <th>World Geography</th>
+                <th>United Nations</th>
+                <th>World History</th>
+                <th>México</th>
+                <th>Extras</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="tq00" class="cell clean" onclick="prompt.show('q00', 100)">
+                    <h3>100</h3>
+                    <div class="hide">
+                        <div id="q00">Brussels</div>
+                        <div id="aq00">What is the capital of Belgium?</div>
+                    </div>
+                </td>
+                <td id="tq01" class="cell clean" onclick="prompt.show('q01', 100)">
+                    <h3>100</h3>
+                    <div class="hide">
+                        <div id="q01">Emma Watson</div>
+                        <div id="aq01">Which famous actress became a UN advocate as she launched the program “He for She”?</div>
+                    </div>
+                </td>
+                <td id="tq02" class="cell clean" onclick="prompt.show('q02', 100)">
+                    <h3>100</h3>
+                    <div class="hide">
+                        <div id="q02">1914 to 1917</div>
+                        <div id="aq02">When did World War I start and when did it end?</div>
+                    </div>
+                </td>
+                <td id="tq03" class="cell clean" onclick="prompt.show('q03', 100)">
+                    <h3>100</h3>
+                    <div class="hide">
+                        <div id="q03">The Battle of Puebla</div>
+                        <div id="aq03">What do commemorate on “Cinco de Mayo”?</div>
+                    </div>
+                </td>
+                <td id="tq04" class="cell clean" onclick="prompt.show('q04', 100)">
+                    <h3>100</h3>
+                    <div class="hide">
+                        <div id="q04">Extra Answer 1</div>
+                        <div id="aq04">Extra Question 1</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="tq10" class="cell clean" onclick="prompt.show('q10', 200)">
+                    <h3>200</h3>
+                    <div class="hide">
+                        <div id="q10">Turkey</div>
+                        <div id="aq10">Name the flag
+                            <img src="turkeyflag.jpeg" style="padding-top: 0.5em;" />
+                        </div>
+                    </div>
+                </td>
+                <td id="tq11" class="cell clean" onclick="prompt.show('q11', 200)">
+                    <h3>200</h3>
+                    <div class="hide">
+                        <div id="q11">António Guterres</div>
+                        <div id="aq11">Who is the current Secretary General of the UN?</div>
+                    </div>
+                </td>
+                <td id="tq12" class="cell clean" onclick="prompt.show('q12', 200)">
+                    <h3>200</h3>
+                    <div class="hide">
+                        <div id="q12">Winston Churchill</div>
+                        <div id="aq12">Who was the Prime Minister of the United Kingdom during World War II?</div>
+                    </div>
+                </td>
+                <td id="tq13" class="cell clean" onclick="prompt.show('q13', 200)">
+                    <h3>200</h3>
+                    <div class="hide">
+                        <div id="q13">123</div>
+                        <div id="aq13">Which article from the Mexican constitution state labor laws?</div>
+                    </div>
+                </td>
+                <td id="tq14" class="cell clean" onclick="prompt.show('q14', 200)">
+                    <h3>200</h3>
+                    <div class="hide">
+                        <div id="q14">Extra Answer 2</div>
+                        <div id="aq14">Extra Question 2</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="tq20" class="cell clean" onclick="prompt.show('q20', 300)">
+                    <h3>300</h3>
+                    <div class="hide">
+                        <div id="q20">Saudi Arabia, Iran, Turkey, Iraq, Egypt, Yemen, Syria, UAE, Jordan, Palestine, Lebanon, Oman, Kuwait, Qatar, Bahrain.</div>
+                        <div id="aq20">Name three middle eastern countries.</div>
+                    </div>
+                </td>
+                <td id="tq21" class="cell clean" onclick="prompt.show('q21', 300)">
+                    <h3>300</h3>
+                    <div class="hide">
+                        <div id="q21">Ebola</div>
+                        <div id="aq21">Which disease led WHO to activate international emergency in 2014?</div>
+                    </div>
+                </td>
+                <td id="tq22" class="cell clean" onclick="prompt.show('q22', 300)">
+                    <h3>300</h3>
+                    <div class="hide">
+                        <div id="q22">Julius Caesar</div>
+                        <div id="aq22">Who said the phrase “veni, vidi, vici” (I came, I saw, I conquered)?</div>
+                    </div>
+                </td>
+                <td id="tq23" class="cell clean" onclick="prompt.show('q23', 300)">
+                    <h3>300</h3>
+                    <div class="hide">
+                        <div id="q23">35 years</div>
+                        <div id="aq23">How many years did Porfirio Diaz rule Mexico?</div>
+                    </div>
+                </td>
+                <td id="tq24" class="cell clean" onclick="prompt.show('q24', 300)">
+                    <h3>300</h3>
+                    <div class="hide">
+                        <div id="q24">Extra Answer 3</div>
+                        <div id="aq24">Extra Question 3</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="tq30" class="cell clean" onclick="prompt.show('q30', 400)">
+                    <h3>400</h3>
+                    <div class="hide">
+                        <div id="q30">1945</div>
+                        <div id="aq30">In which year was Korea divided into North and South?</div>
+                    </div>
+                </td>
+                <td id="tq31" class="cell clean" onclick="prompt.show('q31', 400)">
+                    <h3>400</h3>
+                    <div class="hide">
+                        <div id="q31">193</div>
+                        <div id="aq31">How many member states does the UN currently have?</div>
+                    </div>
+                </td>
+                <td id="tq32" class="cell clean" onclick="prompt.show('q32', 400)">
+                    <h3>400</h3>
+                    <div class="hide">
+                        <div id="q32">Russia</div>
+                        <div id="aq32">Which was the first country to send a woman to outer space?</div>
+                    </div>
+                </td>
+                <td id="tq33" class="cell clean" onclick="prompt.show('q33', 400)">
+                    <h3>400</h3>
+                    <div class="hide">
+                        <div id="q33">Juan Escutia, Agustín Melgar, Juan de la Barrera, Fernando Montes de Oca, Vicente Suárez, y Francisco Márquez</div>
+                        <div id="aq33">Name the six “heroic children”</div>
+                    </div>
+                </td>
+                <td id="tq34" class="cell clean" onclick="prompt.show('q34', 400)">
+                    <h3>400</h3>
+                    <div class="hide">
+                        <div id="q34">Extra Answer 4</div>
+                        <div id="aq34">Extra Question 4</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="tq40" class="cell clean" onclick="prompt.show('q40', 500)">
+                    <h3>500</h3>
+                    <div class="hide">
+                        <div id="q40">Denmark</div>
+                        <div id="aq40">Which country is Greenland part of?</div>
+                    </div>
+                </td>
+                <td id="tq41" class="cell clean" onclick="prompt.show('q41', 500)">
+                    <h3>500</h3>
+                    <div class="hide">
+                        <div id="q41">Europe</div>
+                        <div id="aq41">Which continent has had the highest number of Secretary Generals?</div>
+                    </div>
+                </td>
+                <td id="tq42" class="cell clean" onclick="prompt.show('q42', 500)">
+                    <h3>500</h3>
+                    <div class="hide">
+                        <div id="q42">1948</div>
+                        <div id="aq42">When was Israel created?</div>
+                    </div>
+                </td>
+                <td id="tq43" class="cell clean" onclick="prompt.show('q43', 500)">
+                    <h3>500</h3>
+                    <div class="hide">
+                        <div id="q43">California, Texas, New Mexico, Florida, Nevada, Utah; part of: Arizona, Colorado, Wyoming, Kansas and Oklahoma.</div>
+                        <div id="aq43">Name five former Mexican states that were bought by the United States in 1848?</div>
+                    </div>
+                </td>
+                <td id="tq44" class="cell clean" onclick="prompt.show('q44', 500)">
+                    <h3>500</h3>
+                    <div class="hide">
+                        <div id="q44">Extra Answer 5</div>
+                        <div id="aq44">Extra Question 5</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="options">
+        <h1>ASD Gameshow</h1>
+        <p align="center"><img src="asdLogo.png" height="400px" /></p>
+        <h2 align="center">Number of Teams</h2>
+        <select name="teams" id="teams">
+            <option value="1">1 team</option>
+            <option value="2">2 teams</option>
+            <option value="3">3 teams</option>
+            <option value="4">4 teams</option>
+            <!--option value="5">5 teams</option>
+            <option value="6">6 teams</option>
+            <option value="7">7 teams</option>
+            <option value="8">8 teams</option>
+            <option value="9">9 teams</option>
+            <option value="10">10 teams</option>
+            <option value="11">11 teams</option>
+            <option value="12">12 teams</option-->
+        </select>
+        <input class="submit" type="button" id="submit" value="Start" onclick="game.init()" />
+        <p align="center">Press F11 for full-screen mode</p>
+        <div class="clear"></div>
+    </div>
+    <div id="stats">
+    </div>
+    <div id="prompt">
+        <h2 id="answer"></h2>
+        <p><span id="correct-response"><a href="javascript:prompt.showQuestion()">Correct Response</a> &nbsp;&nbsp;&nbsp;&nbsp; </span><a href="javascript:prompt.hide()">Continue</a></p>
+        <h2 id="question"></h2>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <!--script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script-->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script-->
+</body>
+
+</html>
